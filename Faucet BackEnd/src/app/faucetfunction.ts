@@ -9,7 +9,7 @@ const contract = new ethers.Contract(contractAddress,faucetABI,provider);
 
 async function getBalance() {
     let balance = "";
-    try {
+    try { 
          balance = await contract.getBalance(); // Gọi hàm getBalance() của hợp đồng
         console.log('Contract Balance:', balance.toString());
       } catch (error) {
